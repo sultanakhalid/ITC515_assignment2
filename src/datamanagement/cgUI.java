@@ -7,6 +7,9 @@ import java.awt.Font;
 import java.awt.Color;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class cgUI extends javax.swing.JFrame implements IUnitLister,
 		IStudentLister {
@@ -19,6 +22,7 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister,
 	Integer sid;
 
 	public cgUI(cgCTL ctl) {
+		setTitle("Grade System");
 		this.ctl = ctl;
 		uM = new javax.swing.DefaultComboBoxModel(new String[0]);
 		rM = new javax.swing.DefaultComboBoxModel(new String[0]);
@@ -38,6 +42,7 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister,
 	private void initComponents() {
 
 		jLabel1 = new javax.swing.JLabel();
+		jLabel1.setForeground(Color.RED);
 		jPanel1 = new javax.swing.JPanel();
 		jComboBox1 = new javax.swing.JComboBox();
 		jPanel2 = new javax.swing.JPanel();
@@ -55,8 +60,8 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister,
 
 		setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-		jLabel1.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-		jLabel1.setText("Check Grade UI");
+		jLabel1.setFont(new Font("Times New Roman", Font.BOLD, 20)); // NOI18N
+		jLabel1.setText("Grade System");
 
 		jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Unit"));
 
@@ -247,6 +252,24 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister,
 						jButton2ActionPerformed(evt);
 					}
 				});
+		
+		btnAddUnit = new JButton("Add Unit");
+		btnAddUnit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Addut a=new Addut();
+				String[] args = null;
+				a.main(args);
+			}
+		});
+		
+		btnAddStudent = new JButton("Add Student");
+		btnAddStudent.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				AddStu su=new AddStu();
+				String[] args = null;
+				su.main(args);
+			}
+		});
 
 		javax.swing.GroupLayout layout = new javax.swing.GroupLayout(
 				getContentPane());
@@ -271,8 +294,12 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister,
 							.addGap(157)
 							.addComponent(jLabel1))
 						.addGroup(layout.createSequentialGroup()
-							.addGap(165)
-							.addComponent(jButton3, GroupLayout.PREFERRED_SIZE, 86, GroupLayout.PREFERRED_SIZE)))
+							.addGap(45)
+							.addComponent(btnAddUnit)
+							.addGap(31)
+							.addComponent(jButton3, GroupLayout.PREFERRED_SIZE, 86, GroupLayout.PREFERRED_SIZE)
+							.addGap(30)
+							.addComponent(btnAddStudent)))
 					.addContainerGap())
 		);
 		layout.setVerticalGroup(
@@ -290,7 +317,10 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister,
 					.addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 					.addComponent(jPanel3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 					.addPreferredGap(ComponentPlacement.RELATED)
-					.addComponent(jButton3)
+					.addGroup(layout.createParallelGroup(Alignment.BASELINE)
+						.addComponent(jButton3)
+						.addComponent(btnAddUnit)
+						.addComponent(btnAddStudent))
 					.addGap(11)
 					.addComponent(jlabel6, GroupLayout.PREFERRED_SIZE, 30, GroupLayout.PREFERRED_SIZE)
 					.addContainerGap())
@@ -451,4 +481,6 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister,
 	private javax.swing.JTextField jTextField1;
 	private javax.swing.JTextField jTextField2;
 	private javax.swing.JTextField jTextField3;
+	private JButton btnAddUnit;
+	private JButton btnAddStudent;
 }
