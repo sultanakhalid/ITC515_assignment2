@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><root>
+  <unitTable>
+    <unit ae="45" asg1wgt="20" asg2wgt="30" cr="65" di="75" examwgt="50" hd="85" name="Programming Practice" ps="50" uid="ITC515"/>
+    <unit ae="45" asg1wgt="30" asg2wgt="20" cr="65" di="75" examwgt="50" hd="85" name="Systems Analysis" ps="50" uid="ITC508"/>
+    <unit ae="45" asg1wgt="30" asg2wgt="30" cr="65" di="75" examwgt="40" hd="85" name="Software Engineering" ps="50" uid="ITC517"/>
+    <unit ae="45" asg1wgt="20" asg2wgt="30" cr="65" di="75" examwgt="50" hd="85" name="Practice" ps="50" uid="ITC215"/>
+    <unit asg1wgt="20" asg2wgt="20" examwgt="20" name="java" uid="itc455"/>
+	<unit ae="45" asg1wgt="20" asg2wgt="30" cr="65" di="75" examwgt="50" hd="85" name="profession" ps="50" uid="ITC789"/>
+	<unit ae="20" asg1wgt="50" asg2wgt="50" cr="20" di="2" examwgt="50" hd="0" name="pro" ps="20" uid="ITC963"/>
+	<unit ae="21" asg1wgt="2" asg2wgt="2" cr="21" di="21" examwgt="2" hd="21" name="ino" ps="21" uid="45645"/>
+	<unit ae="20" asg1wgt="20" asg2wgt="20" cr="20" di="20" examwgt="20" hd="20" name="Professional" ps="20" uid="Itc523"/></unitTable>
+  <studentTable>
+    <student fname="John" lname="Smith" sid="1"/>
+    <student fname="Mary" lname="Contrary" sid="2"/>
+    <student fname="Fred" lname="Nurke" sid="3"/>
+    <student fname="Joe" lname="Bloe" sid="4"/>
+    <student fname="Mark" lname="Bennett" sid="5"/>
+    <student fname="inder" lname="Singh" sid="6"/>
+  <student fname="ghghg" lname="hfhh" sid="4545"/>
+  <student fname="Inderjit" lname="Singh" sid="11560001"/>
+  <student fname="jhgj" lname="jjj" sid="11562323"/></studentTable>
+  <studentUnitRecordTable>
+    <record asg1="19.0" asg2="27.0" exam="50.0" sid="1" uid="ITC515"/>
+	<record asg1="20.0" asg2="30.0" exam="50.0" sid="11560001" uid="ITC789"/>
+    <record asg1="20.0" asg2="28.0" exam="50.0" sid="6" uid="ITC215"/>
+    <record asg1="13.0" asg2="12.0" exam="25.0" sid="11560001" uid="Itc523"/>
+    <record asg1="10" asg2="10" exam="24" sid="4" uid="ITC515"/>
+    <record asg1="0.0" asg2="0.0" exam="25.0" sid="1" uid="ITC508"/>
+    <record asg1="29.0" asg2="20.0" exam="39.0" sid="2" uid="ITC508"/>
+    <record asg1="0.0" asg2="0.0" exam="48.0" sid="4" uid="ITC508"/>
+    <record asg1="12.0" asg2="13.0" exam="25.0" sid="5" uid="ITC508"/>
+    <record asg1="0" asg2="0" exam="0" sid="1" uid="ITC517"/>
+    <record asg1="15" asg2="15" exam="25" sid="2" uid="ITC517"/>
+    <record asg1="0" asg2="0" exam="0" sid="3" uid="ITC517"/>
+      
+  <record asg1="20" asg2="20" exam="20" uid="Itc 523"/></studentUnitRecordTable>
+</root>
